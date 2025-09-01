@@ -1,26 +1,54 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Brand tokens via CSS variables (optional future use) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Replace these with actual color values or reference Tailwind CSS variables if available */
+  --bg: #f5f5f4; /* Example: replace with your brand.paper color */
+  --fg: #1a1a1a; /* Example: replace with your brand.ink color */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+:focus-visible {
+  /* Replace with your brand.accent color */
+  outline: 2px solid #ff9900;
+  outline-offset: 2px;
+}
+
+
+/* Section spacing helpers (mobile-first) */
+.section {
+  padding-top: 2.5rem;   /* py-10 */
+  padding-bottom: 2.5rem;
+}
+
+.card {
+  border-radius: 1rem; /* Adjust as needed for rounded-card */
+  background-color: #fff;
+  box-shadow: 0 1.5px 6px 0 rgba(0,0,0,0.07), 0 1.5px 6px 0 rgba(0,0,0,0.07); /* Example for shadow-card */
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 4rem;   /* md:py-16 */
+    padding-bottom: 4rem;
+  }
+}
+
+/* Card style helper */
+.card {
+  border-radius: 1rem; /* Adjust as needed for rounded-card */
+  background-color: #fff;
+  box-shadow: 0 1.5px 6px 0 rgba(0,0,0,0.07), 0 1.5px 6px 0 rgba(0,0,0,0.07); /* Example for shadow-card */
+  border: 1px solid rgba(0,0,0,0.05);
 }
