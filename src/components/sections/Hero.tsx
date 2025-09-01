@@ -1,7 +1,12 @@
 import Image from 'next/image'
 import { Container } from '@/components/ui/Container'
-
+// Hero section with headline, description, and image
 export function Hero() {
+    // Note: Replace placeholder values with actual data
+    // WhatsApp number and Google Maps query should be updated
+    // Image source should point to an actual image of the coffee shop
+    // Headline and description should reflect the brand's message
+    // The layout is responsive, adjusting for different screen sizes
   return (
     <section className="section">
       <Container className="grid gap-8 md:grid-cols-2 items-center">
@@ -43,3 +48,4 @@ export function Hero() {
     </section>
   )
 }
+// Note: The image path "/coffee/hero.jpg" should point to an actual image file in the public directory.

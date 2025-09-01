@@ -1,8 +1,21 @@
 import { Container } from '@/components/ui/Container'
 import Link from 'next/link'
+// Footer component with contact and quick links
+// Note: Replace placeholder values with actual data
+// WhatsApp number, email, and social media links should be updated
+// Address and hours should reflect the actual location details
+// Quick links should point to the correct sections/pages
+
 
 export function Footer() {
-  return (
+
+    // The current year is dynamically generated
+
+    // The layout is responsive, adjusting for different screen sizes
+
+    // All links open in a new tab where appropriate
+
+    return (
     <footer className="border-t border-black/5 bg-white">
       <Container className="py-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-sm">
         <div>

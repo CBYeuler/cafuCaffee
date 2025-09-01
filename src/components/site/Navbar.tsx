@@ -1,5 +1,9 @@
 'use client'
-
+// Navbar component with navigation links and WhatsApp order button
+// Note: Replace placeholder values with actual data
+// WhatsApp number should be updated
+// Navigation links should point to the correct sections/pages
+import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Container } from '@/components/ui/Container'
@@ -10,9 +14,13 @@ const NAV = [
   { href: '/#visit', label: 'Visit' },
   { href: '/#instagram', label: 'Instagram' },
 ]
-
+// Note: The current path is used to highlight the active link
 export function Navbar() {
   const pathname = usePathname()
+
+// The current year is dynamically generated
+
+// The layout is responsive, adjusting for different screen sizes
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur">
@@ -46,3 +54,4 @@ export function Navbar() {
     </header>
   )
 }
+// Note: The WhatsApp link should include the actual phone number when implemented.

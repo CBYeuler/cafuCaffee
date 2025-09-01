@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import { Container } from '@/components/ui/Container'
-
+// Sample Instagram items
 const items = [
   { href: 'https://www.instagram.com/cafucoffee/', image: '/instagram/1.jpg', alt: 'Cafu Coffee IG 1' },
   { href: 'https://www.instagram.com/cafucoffee/', image: '/instagram/2.jpg', alt: 'Cafu Coffee IG 2' },
   { href: 'https://www.instagram.com/cafucoffee/', image: '/instagram/3.jpg', alt: 'Cafu Coffee IG 3' },
   { href: 'https://www.instagram.com/cafucoffee/', image: '/instagram/4.jpg', alt: 'Cafu Coffee IG 4' },
 ]
-
+// Instagram strip section
 export function InstagramStrip() {
   return (
     <section id="instagram" className="section bg-white">
@@ -26,3 +26,4 @@ export function InstagramStrip() {
     </section>
   )
 }
+// Note: The Instagram links should point to the actual Instagram page when implemented.

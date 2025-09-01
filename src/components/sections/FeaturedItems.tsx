@@ -1,11 +1,12 @@
 import { Container } from '@/components/ui/Container'
+// Sample featured items data
 
 const items = [
   { name: 'Spanish Latte', desc: 'Sweet milk, bold espresso', price: '135 ₺' },
   { name: 'Cold Brew', desc: '12-hour steep', price: '135 ₺' },
   { name: 'Cinnamon Roll', desc: 'House glaze', price: '95 ₺' },
 ]
-
+// Featured items section
 export function FeaturedItems() {
   return (
     <section className="section">
@@ -24,3 +25,4 @@ export function FeaturedItems() {
     </section>
   )
 }
+// Note: The items listed are examples. Replace them with actual featured items as needed.

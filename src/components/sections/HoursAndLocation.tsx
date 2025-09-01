@@ -1,6 +1,7 @@
 import { Container } from '@/components/ui/Container'
-
+// Section displaying hours and location information
 export function HoursAndLocation() {
+    // Note: Replace placeholder values with actual data
   return (
     <section id="visit" className="section">
       <Container className="grid gap-8 lg:grid-cols-2 items-start">
@@ -45,3 +46,4 @@ export function HoursAndLocation() {
     </section>
   )
 }
+// Note: Replace "PLACEHOLDER_MAPS_EMBED" with the actual Google Maps embed code for the location.

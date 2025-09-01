@@ -52,3 +52,32 @@ body {
   box-shadow: 0 1.5px 6px 0 rgba(0,0,0,0.07), 0 1.5px 6px 0 rgba(0,0,0,0.07); /* Example for shadow-card */
   border: 1px solid rgba(0,0,0,0.05);
 }
+/* Utility classes for spacing */
+.mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mx-4 { margin-left: 1rem; margin-right: 1rem; }
+.p-4 { padding: 1rem; }
+.pt-4 { padding-top: 1rem; }
+.pb-4 { padding-bottom: 1rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem;
+}
+
+/* Medium and up */
+
+@media (min-width: 768px) {
+  .mt-8 { margin-top: 2rem; }
+  .mb-8 { margin-bottom: 2rem; }
+  .mx-8 { margin-left: 2rem; margin-right: 2rem
+  }
+  .p-8 { padding: 2rem; }
+  .pt-8 { padding-top: 2rem; }
+  .pb-8 { padding-bottom: 2rem; }
+  .px-8 { padding-left: 2rem; padding-right: 2rem
+  }
+} 
+/* Additional utility classes can be added as needed */
+/* Example: .mt-2, .mb-2, .p-2, etc. for finer control */
+/* This file sets up global styles, brand tokens, and utility classes for spacing */
+/* It uses Tailwind CSS for base styles and components */
+/* You can expand this file with more utilities and components as your project grows */
+/* End of globals.css */
