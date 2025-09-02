@@ -1,5 +1,5 @@
 import { Container } from '@/components/ui/Container'
-
+// Sample menu data
 const MENU = [
   {
     category: 'Classics',
@@ -17,7 +17,7 @@ const MENU = [
     ],
   },
 ]
-
+// Teaser section for the menu
 export function MenuTeaser() {
   return (
     <section id="menu" className="section bg-white/60 border-y border-black/5">
@@ -45,3 +45,4 @@ export function MenuTeaser() {
     </section>
   )
 }
+// Note: The "/menu" link should point to the actual menu page when implemented.
