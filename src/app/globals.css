@@ -4,8 +4,8 @@
 
 /* Brand tokens via CSS variables (optional) */
 :root {
-  --bg: theme(colors.brand.paper);
-  --fg: theme(colors.brand.ink);
+  --bg: #FAF8F6;
+  --fg: #1F1D1B;
 }
 
 html, body {
